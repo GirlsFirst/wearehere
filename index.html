@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=CairoScript' rel='stylesheet'>
+  <title>We Are Here</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+  }
+  body {
+    font-family: 'Cairo';
+}
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+  </style>
+</head>
+<body style="text-align:center">
+
+<h2>Social Media</h2>
+
+<div class="popup" onclick="myFunction()">Click me!
+  <span class="popuptext" id="myPopup">Follow us on instagram @rihamabdalla @valentinapavloic!</span>
+</div>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">What We Do<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="weListen.html">We Listen</a></li>
+            <li><a href="weInform.html">We Inform</a></li>
+            <li><a href="weHelp.html">We Help</a></li>
+          </ul>
+            </li>
+         </ul>
+      <ul class="nav navbar-nav">
+        <li><a href="selfCare.html">Self Care</a></li>
+        <li><a href="helpingOthers.html">Helping Others</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Mental Illnesses <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+         <li><a href="mentalIllnesses.html">General Information</a></li>
+         <li><a href="depression.html">Depression</a></li>
+         <li><a href="anxiety.html">Anxiety</a></li>
+         <li><a href="addiction.html">Addiction</a></li>
+         <li><a href="eatingDisorders.html">Eating Disorders</a></li>
+       </ul>
+           </li>
+         </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="crisisLines.html">Crisis Lines</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://i.pinimg.com/originals/59/16/12/591612e320fbb7e75f1c6e44b17e923a.jpg" alt="Art of people with flowers growing out of their heads.">
+        <div class="carousel-caption">
+          <h3>We Are Here.</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://i.pinimg.com/originals/d7/c0/29/d7c029846a24b8d7a522750de5f83c01.jpg" alt="Art of a tree/forest scene.">
+        <div class="carousel-caption">
+          <h3>We Are Here</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+<h3>Content Warning:</h3>
+<h5>This website discusses uncomfortable and traumatic topics. It contains coping skills that can be helpful, but if you are upset by reading about mental illness and events which cause PTSD (abuse, assault, etc.) it may not be for you.</h5>
+
+<div class="container text-center">
+  <h3>What We Do</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="https://data.whicdn.com/images/269682593/superthumb.jpg?t=1481411052" class="img-responsive" style="width:100%" alt="Person sitting in front of a window in the dark.">
+      <a style="background-color:#b39ddb;color:white;" href="weListen.html" class="btn btn-lg btn-block" role="button">We Listen</a>
+    </div>
+    <div class="col-sm-4">
+      <img src="https://i.pinimg.com/originals/4f/cc/a0/4fcca00a8a7b452a4da56991a2132615.jpg" class="img-responsive" style="width:100%" alt="Flowers arranged on a light pink background.">
+      <a href="weInform.html" style="background-color:#f8bbd0;color:white;" class="btn btn-lg btn-block" role="button">We Inform</a>
+    </div>
+    <div class="col-sm-4">
+      <img src="https://s13.favim.com/orig/160528/aesthetic-aesthetics-art-city-Favim.com-4351673.jpeg" class="img-responsive" style="width:100%" alt="Pastel pixel art of a city alleyway.">
+        <a href="weHelp.html" style="background-color:#80deea; color:white;" class="btn btn-lg btn-block" role="button">We Help</a>
+    </div>
+  </div>
+</div><br>
+
+<footer class="container-fluid text-center">
+  <p>By Valentina Pavlovic, Riham Mohammed and Je Lecia Magee</p>
+</footer>
+
+</body>
+</html>
